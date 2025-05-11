@@ -66,4 +66,17 @@ You should have these installed on your machine:
 
   You should see a group of containers running in Docker.
 
+### Github Actions
+
+- [ ] Add remote server (secrets)[https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions]
+
+> [!NOTE]
+> Add below credentials
+```bash
+# ssh secrets
+SHH_KEY, SSH_PORT, SHH_HOST, SSH_USERNAME,
+# project secrets 
+PROJECT_PATH, PROJECT_NAME
+```
+
 You can run the app without docker for development purposes, which is more convenient.

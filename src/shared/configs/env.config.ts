@@ -9,6 +9,7 @@ const envConfigSchema = z.object({
   DATABASE_NAME: z.string().min(1, 'DATABASE_NAME cannot be empty'),
   DATABASE_URL: z.string().url(),
   DATABASE_PASSWORD: z.string().min(1, 'DATABASE_PASSWORD cannot be empty'),
+  BOT_TOKEN: z.string().min(1, 'BOT_TOKEN cannot be empty'),
 });
 
 export type EnvConfig = z.infer<typeof envConfigSchema>;
